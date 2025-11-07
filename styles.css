@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.main-container {
+    background-image: url("Assets/background_img.jpg");
+    height: 100vh;
+    position: relative;
+    background-size: cover;
+    background-position: center center;
+}
+
+.box {
+    position: absolute;
+    top: 0;
+    background-color: black;
+    height: 100vh;
+    width: 100%;
+    opacity: 0.69;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10%;
+    position: relative;
+    z-index: 2;
+}
+
+@media screen and (max-width: 500px) {
+    .right {
+        display:flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+}
+
+.left img {
+    padding: 5px 5px 0px 0px;
+    height: 40px;
+    opacity: 0.9;
+}
+
+.red-button {
+    background-color: rgba(255, 0, 0, 0.858);
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.red-button:hover {
+    background-color: #ba0c15;
+}
+.right .red-button {
+    padding: 11px 14px 8px 14px;
+    font-size:14px;
+    line-height:14px;
+    font-weight:500;
+}
+
+.lang-button {
+    background-color: rgba(25, 25, 25, 0.7);
+    border: 1px solid rgb(100, 99, 99);
+    border-radius: 5px;
+    color: white;
+    margin-left: 10px;
+    padding: 7px 23px 7px 14px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.lang-button img {
+    width: 16px;
+    height: 16px;
+    margin-right: 5px;
+}
+
+.content {
+    padding:0 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 3;
+    height: 80%;
+    font-family: "Martel Sans", sans-serif;
+    font-style: normal;
+}
+
+.content h1 {
+    color: white;
+    font-weight: 900;
+    font-size: 56px;
+    line-height: 70px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.content h3 {
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: normal;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.content p {
+    color: white;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.input-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+}
+
+@media screen and (max-width: 600px) {
+    .input-group {
+        flex-direction: column;
+    }
+    .input-group input {
+        width: 90vw;
+    }
+}
+
+.input-group button {
+    padding: 10px 44px 16px 22px;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 24px;
+    cursor: pointer;
+}
+
+.input-group input {
+    background-color: rgba(28, 25, 25, 0.8);
+    color: white;
+    padding: 10px;
+    padding-left: 15px;
+    font-size: 16px;
+    font-weight:400;
+    line-height: 24px;
+    width: 310px;
+    height: 30px;
+    border: 1px solid rgb(100, 99, 99);
+    border-radius: 4px;
+}
+
+.input-group input::placeholder {
+    color: rgb(212, 211, 211);
+    opacity: 0.9;
+
+}
+
+.input-group input:focus {
+    outline: navajowhite;
+    border: 3px solid white;
+}
